@@ -10,7 +10,6 @@ div.main * {
 }
 
 div.main div.threeD-container {
-  margin-top: -8rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -86,7 +85,7 @@ div.main div.current-actions {
   border: 2px solid black;
 }
 
-@media screen and (min-width: 569px) {
+@media screen and (min-width: 669px) {
   div.main {
     display: flex;
     flex-direction: column;
@@ -94,6 +93,6 @@ div.main div.current-actions {
     align-items: center;
   }
   div.main div.threeD-container {
-    transform: scale(1.3);
+    transform: scale(1.6);
   }
 }

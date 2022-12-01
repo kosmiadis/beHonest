@@ -53,10 +53,6 @@ div.header label:hover {
   cursor: pointer;
 }
 
-div.header label:active {
-  background-color: unset;
-}
-
 div.header ul {
   overflow-x: hidden;
   margin: 0;

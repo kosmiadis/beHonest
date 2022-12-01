@@ -29,6 +29,7 @@ div.header {
         width: $hamburger-width;
         height: $hamburger-height;
         position: relative;
+        
 
         & div.line {
             width: $hamburger-width;
@@ -55,10 +56,6 @@ div.header {
 
         &:hover {
             cursor: pointer;
-        }
-
-        &:active {
-            background-color: unset;
         }
 
         
