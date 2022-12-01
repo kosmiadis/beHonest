@@ -1,6 +1,6 @@
 /*@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');*/
 div.header {
-  z-index: 2;
+  z-index: 10;
   /*For fixes
     img, label, ul {
         border: 1px solid white;
