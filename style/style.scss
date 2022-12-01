@@ -1,0 +1,23 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');*/
+@import "layout/header.scss";
+@import "layout/main.scss";
+$bg-light-purple: #E3DFFF;
+$bg-darker-purple: #c6bff5;
+$bg-line-color: rgb(172, 161, 244);
+body {
+    margin: 0;
+    font-family: 'Lato';
+    background-image: linear-gradient(to bottom right,$bg-darker-purple 0% 32%, $bg-line-color 32% 33%, $bg-light-purple 33% 65%, $bg-line-color 65% 66%,$bg-darker-purple 66% 100%);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    
+    div.main {
+        flex: 1;
+    }
+
+    /*for background*/
+
+    
+
+}
