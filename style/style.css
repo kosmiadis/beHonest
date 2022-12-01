@@ -1,10 +1,11 @@
 /*@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');*/
 div.header {
+  z-index: 2;
   /*For fixes
     img, label, ul {
         border: 1px solid white;
     }*/
-  padding: 2rem 2rem;
+  padding: 0.7rem 2rem;
   height: min-content;
   background-color: #8c52ff;
   display: grid;
@@ -53,9 +54,8 @@ div.header label:hover {
   cursor: pointer;
 }
 
-div.header label:hover div.line {
-  border-color: black;
-  background-color: black;
+div.header label:active {
+  background-color: none;
 }
 
 div.header ul {
@@ -168,18 +168,54 @@ div.main {
   align-items: center;
 }
 
+div.main div.starting-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1rem;
+  width: 70%;
+  max-width: 300px;
+  border-radius: 15px;
+  border: 3px dashed black;
+  padding: 2rem 0.5rem;
+  box-shadow: 0px 0px 20px grey;
+  background-color: #8c52ff;
+}
+
+div.main div.starting-container p {
+  padding: 1rem;
+  text-align: left;
+  font-size: 2rem;
+  font-family: 'Lato';
+  font-weight: 600;
+  color: white;
+}
+
+div.main div.starting-container button {
+  background-color: #aca1f4;
+  border-radius: 15px;
+  border: none;
+  outline: none;
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+  font-family: 'Lato';
+  font-weight: white;
+}
+
 div.main div.current-actions {
+  display: none;
   border: 2px solid black;
 }
 
 body {
   margin: 0;
   font-family: 'Lato';
-  background-image: linear-gradient(to bottom right, #c6bff5 0% 32%, #aca1f4 32% 33%, #E3DFFF 33% 65%, #aca1f4 65% 66%, #c6bff5 66% 100%);
+  /*background-image: linear-gradient(to bottom right,$bg-darker-purple 0% 32%, $bg-line-color 32% 33%, $bg-light-purple 33% 65%, $bg-line-color 65% 66%,$bg-darker-purple 66% 100%);*/
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  /*for background*/
+  background-image: url("../images/background.png");
+  background-size: cover;
 }
 
 body div.main {

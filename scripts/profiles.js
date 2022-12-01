@@ -8,5 +8,3 @@ const people = {
 
     }
 }
-
-people.fetchPeople()

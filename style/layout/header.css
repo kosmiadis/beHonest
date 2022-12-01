@@ -1,9 +1,10 @@
 div.header {
+  z-index: 2;
   /*For fixes
     img, label, ul {
         border: 1px solid white;
     }*/
-  padding: 2rem 2rem;
+  padding: 0.7rem 2rem;
   height: min-content;
   background-color: #8c52ff;
   display: grid;
@@ -52,9 +53,8 @@ div.header label:hover {
   cursor: pointer;
 }
 
-div.header label:hover div.line {
-  border-color: black;
-  background-color: black;
+div.header label:active {
+  background-color: none;
 }
 
 div.header ul {

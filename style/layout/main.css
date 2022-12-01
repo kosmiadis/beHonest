@@ -5,6 +5,13 @@ div.main {
   align-items: center;
 }
 
+div.main div.starting-container {
+  width: 60%;
+  padding: 1rem;
+  background-color: #cfe6f9;
+}
+
 div.main div.current-actions {
+  display: none;
   border: 2px solid black;
 }

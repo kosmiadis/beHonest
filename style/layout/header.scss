@@ -2,13 +2,14 @@ $header-height: min-content;
 $hamburger-width: 38px;
 $hamburger-height: 34px;
 $header-bg-color: #8c52ff;
-div.header {
 
+div.header {
+    z-index: 2;
     /*For fixes
     img, label, ul {
         border: 1px solid white;
     }*/
-    padding: 2rem 2rem;
+    padding: 0.7rem 2rem;
     height: $header-height;
     background-color: $header-bg-color;
     display: grid;
@@ -54,11 +55,10 @@ div.header {
 
         &:hover {
             cursor: pointer;
-            
-            & div.line {
-                border-color: black;
-                background-color: black;
-            }
+        }
+
+        &:active {
+            background-color: none;
         }
 
         

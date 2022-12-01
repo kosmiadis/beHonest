@@ -1,1 +1,1 @@
-div.main{display:flex;flex-direction:column;justify-content:center;align-items:center}div.main div.current-actions{border:2px solid black}
+div.main{display:flex;flex-direction:column;justify-content:center;align-items:center}div.main div.starting-container{width:60%;padding:1rem;background-color:#cfe6f9}div.main div.current-actions{display:none;border:2px solid black}
