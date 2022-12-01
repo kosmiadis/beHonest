@@ -1,46 +1,116 @@
-$btn-bg-color: rgb(172, 161, 244);
+$btn-bg-color: rgb(160, 143, 255);
+
+$btn-hover-bg-color: #6e29f7;
+$front-bg-color: #b18cfd;
+$back-bg-color: #9661ff;
 
 div.main {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    * {
+        font-family: monospace;
+    }
     
-    div.starting-container {
+    div.threeD-container {
+        margin-top: 2rem;
         display: flex;
         flex-direction: column;
+        justify-content: center;
         align-items: center;
-        margin-top: 1rem;
-        width: 70%;
-        max-width: 300px;
-        border-radius: 15px;
-        border: 3px dashed black;
-        padding: 2rem 0.5rem;
-        box-shadow: 0px 0px 20px grey;
-        background-color: $header-bg-color;
+        border: 1px solid black;
+        position: relative;
 
-        & p {
-            padding: 1rem;
-            text-align: left;
-            font-size: 2rem;
-            font-family: 'Lato';
-            font-weight: 600;
-            color: white;
+        div {
+            position: absolute;
+            width: 300px;
+            height: 400px;
         }
 
-        & button {
-            background-color: $btn-bg-color;
-            border-radius: 15px;
-            border: none;
-            outline: none;
-            padding: 1rem 2rem;
-            font-size: 1.5rem;
-            font-family: 'Lato';
-            font-weight: white;
+        div.front {
+            text-align: center;
+            z-index: 4;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: $front-bg-color;
+            
+            & p {
+                padding: 1rem;
+                text-align: center;
+                font-size: 1.7rem;
+                font-weight: 600;
+                color: white;
+                margin: 0;
+                margin-bottom: 10px;
+                
+                & span {
+                    font-size: 2rem;
+                    margin: 0;
+                    color: black;
+                    font-weight: 600;;
+                }
+            }
+    
+            & button {
+                background-color: $back-bg-color;
+                border-radius: 5px;
+                border: none;
+                outline: none;
+                padding: 1rem 2rem;
+                font-size: 1.5rem;
+                
+                font-weight: 600;
+                color: white;
+                transition: all 0.2s;
+    
+                &:hover {
+                    cursor: pointer;
+                    background-color: $btn-hover-bg-color;
+                }
+            }
         }
+
+        div.back1 {
+            z-index: 3;
+            transform: translate(10px, 10px);
+            background-color: $back-bg-color;
+            
+        }
+
+        div.back2 {
+            z-index: 2;
+            transform: translate(20px, 20px);
+            background-color: $front-bg-color;   
+        }
+
+        div.back3 {
+            z-index: 1;
+            transform: translate(30px, 30px);
+            background-color: $back-bg-color;
+            
+        }
+
+
     }
+
     div.current-actions {
         display: none;
         border: 2px solid black;
+    }
+}
+
+@media screen and (min-width: 569px) {
+    div.main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        div.threeD-container {
+            transform: scale(1.2)
+        }
     }
 }
