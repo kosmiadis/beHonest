@@ -54,7 +54,7 @@ div.header label:hover {
 }
 
 div.header label:active {
-  background-color: none;
+  background-color: unset;
 }
 
 div.header ul {

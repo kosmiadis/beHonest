@@ -1,8 +1,8 @@
 div.main {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 }
 
 div.main * {
@@ -10,7 +10,7 @@ div.main * {
 }
 
 div.main div.threeD-container {
-  margin-top: 2rem;
+  margin-top: -8rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -81,12 +81,6 @@ div.main div.threeD-container div.back2 {
   background-color: #b18cfd;
 }
 
-div.main div.threeD-container div.back3 {
-  z-index: 1;
-  transform: translate(30px, 30px);
-  background-color: #9661ff;
-}
-
 div.main div.current-actions {
   display: none;
   border: 2px solid black;
@@ -100,6 +94,6 @@ div.main div.current-actions {
     align-items: center;
   }
   div.main div.threeD-container {
-    transform: scale(1.2);
+    transform: scale(1.3);
   }
 }

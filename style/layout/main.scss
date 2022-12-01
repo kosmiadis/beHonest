@@ -7,14 +7,14 @@ $back-bg-color: #9661ff;
 div.main {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     * {
         font-family: monospace;
     }
     
     div.threeD-container {
-        margin-top: 2rem;
+        margin-top: -8rem;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -85,15 +85,6 @@ div.main {
             transform: translate(20px, 20px);
             background-color: $front-bg-color;   
         }
-
-        div.back3 {
-            z-index: 1;
-            transform: translate(30px, 30px);
-            background-color: $back-bg-color;
-            
-        }
-
-
     }
 
     div.current-actions {
@@ -110,7 +101,7 @@ div.main {
         align-items: center;
         
         div.threeD-container {
-            transform: scale(1.2)
+            transform: scale(1.3)
         }
     }
 }
